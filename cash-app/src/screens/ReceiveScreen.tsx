@@ -242,7 +242,7 @@ const styles = StyleSheet.create({
     borderColor: "#ccc",
     borderRadius: 5, // Rounded corners for input fields
     backgroundColor: "#141414",
-    color: "#000",
+    color: "#FFF",
   },
   button: {
     paddingVertical: 10,

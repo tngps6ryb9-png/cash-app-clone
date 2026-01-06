@@ -13,22 +13,22 @@ export function HomeScreen() {
   return (
     <View style={styles.screenContainer}>
       <Text
-        style={{ fontWeight: "bold", marginBottom: 12 }}
+        style={{ fontWeight: "bold", marginBottom: 12, color: "white" }}
         variant="displaySmall"
       >
-        Solana Mobile Expo Template
+        Cash App Clone
       </Text>
       {selectedAccount ? (
         <AccountDetailFeature />
       ) : (
         <>
           <Section
-            title="Solana SDKs"
-            description="Configured with Solana SDKs like Mobile Wallet Adapter and web3.js."
+            title="Solana Blockchain"
+            description="Built with Solana blockchain technology and Mobile Wallet Adapter."
           />
           <Section
-            title="UI Kit and Navigation"
-            description="Utilizes React Native Paper components and the React Native Navigation library."
+            title="Send & Receive"
+            description="Send and receive payments with your friends using Solana."
           />
           <Section
             title="Get started!"
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
   screenContainer: {
     padding: 16,
     flex: 1,
+    backgroundColor: "#141414",
   },
   buttonGroup: {
     flexDirection: "column",

@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "space-between",
     padding: 20,
-    backgroundColor: "#f2f2f2",
+    backgroundColor: "#141414",
   },
   cameraContainer: {
     position: "absolute",
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
   displayText: {
     fontSize: 74,
     fontWeight: "bold",
-    color: "#000",
+    color: "#FFF",
     textAlign: "center",
   },
   keypad: {
@@ -133,13 +133,13 @@ const styles = StyleSheet.create({
     height: 80,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#ddd",
+    backgroundColor: "#141414",
     borderRadius: 40,
   },
   buttonText: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "#333",
+    color: "#FFF",
   },
   buttonRow: {
     flexDirection: "row",
@@ -150,6 +150,11 @@ const styles = StyleSheet.create({
     flex: 1,
     marginLeft: 6,
     marginRight: 6,
+    backgroundColor: "#444",
+    paddingTop: 5,
+    paddingBottom: 5,
+    justifyContent: "center",
+    borderRadius: 50,
   },
 });
 
