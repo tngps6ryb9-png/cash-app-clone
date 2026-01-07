@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "cash-app-clone",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -9,6 +9,9 @@
     "web": "expo start --web",
     "build": "npx eas build --profile development --platform android",
     "build:local": "npx eas build --profile development --platform android --local",
+    "build:android:production": "npx eas build --profile production --platform android",
+    "build:ios:production": "npx eas build --profile production --platform ios",
+    "build:all:production": "npx eas build --profile production --platform all",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
