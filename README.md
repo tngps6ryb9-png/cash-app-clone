@@ -99,6 +99,24 @@ After building, EAS will provide a download link for your APK (Android) or IPA (
 2. Visit https://expo.dev and navigate to your project's builds
 3. Share the download link with users to install the app
 
+### Over-The-Air (OTA) Updates
+
+This app is configured with Expo Updates to support OTA updates. After users install your app, you can push updates without requiring them to download a new version:
+
+1. Make changes to your JavaScript/TypeScript code
+2. Publish the update:
+   ```bash
+   eas update --branch production --message "Your update message"
+   ```
+3. Users will receive the update automatically on next app launch
+
+**Update Channels:**
+- `development` - For development builds
+- `preview` - For preview/testing builds
+- `production` - For production releases
+
+The app uses `appVersion` as the runtime version policy, ensuring compatibility between native code and updates.
+
 ### Local Development Build
 
 For development builds with the Expo Dev Client:
@@ -125,7 +143,8 @@ After building, you can distribute your app:
 ## Technologies Used
 
 - React Native
-- Expo
+- Expo & Expo Updates (OTA)
+- EAS Build & EAS Submit
 - Solana Web3.js
 - Solana Mobile Wallet Adapter
 - React Navigation
